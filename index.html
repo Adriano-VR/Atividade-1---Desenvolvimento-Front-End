@@ -3,44 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adriano Rodrigues">
+    <meta name="description" content="ONG Amigão - Organização dedicada ao resgate e bem-estar de animais abandonados desde 2025">
+    <meta name="keywords" content="ong, animais, resgate, adoção, voluntário, cachorro, gato, São Paulo">
     <link rel="stylesheet" href="estilos.css">
     <title>Início - ONG Amigão</title>
 </head>
 <body>
     <header>
-        <h1>ONG Amigão</h1>
+        <div class="header-container">
+            <a href="#" class="logo">
+                🐾 ONG Amigão
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="project/projeto.html">Projetos</a></li>
+                    <li><a href="register/cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="project/projeto.html">Projeto</a></li>
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="project/projeto.html">Projetos</a></li>
                 <li><a href="register/cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
-    </header>
-    <main >
+    </div>
+    
+    <div class="menu-overlay"></div>
+    
+    <main>
+        <section style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; text-align: center; padding: 60px 20px;">
+            <h1 style="color: white; font-size: 2.5rem;">Bem-vindo à ONG Amigão</h1>
+            <p style="font-size: 1.2rem; color: white; margin-bottom: 30px;">Transformando vidas de animais abandonados</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="register/cadastro.html" class="btn btn-lg" style="background: white; color: #2196f3;">Seja Voluntário</a>
+                <a href="project/projeto.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Conheça os Projetos</a>
+            </div>
+        </section>
+
+        <div class="grid grid-4" style="margin-bottom: 40px;">
+            <div style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; padding: 30px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: bold;">500+</div>
+                <div>Animais Resgatados</div>
+            </div>
+            <div style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; padding: 30px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: bold;">300+</div>
+                <div>Adoções Realizadas</div>
+            </div>
+            <div style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; padding: 30px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: bold;">150+</div>
+                <div>Voluntários Ativos</div>
+            </div>
+            <div style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; padding: 30px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: bold;">10</div>
+                <div>Anos de Atuação</div>
+            </div>
+        </div>
+
         <section>
             <h2>Quem Somos</h2>
-            <p>Somos uma organização sem fins lucrativos que atua com animais abandonados.</p>
-            <img src="assets/8-5000x3333.jpg"  alt="Cachorro sorrindo para a câmera em um abrigo.">
+            <div class="grid grid-2">
+                <div>
+                    <p>Somos uma organização sem fins lucrativos que atua com animais abandonados, oferecendo abrigo, cuidados veterinários e muito amor para quem mais precisa.</p>
+                    <p>Nossa missão é resgatar, tratar e encontrar lares amorosos para animais em situação de vulnerabilidade.</p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px;">
+                        <span class="badge badge-primary">Resgate</span>
+                        <span class="badge badge-success">Tratamento</span>
+                        <span class="badge badge-info">Adoção</span>
+                        <span class="badge badge-warning">Conscientização</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/8-5000x3333.jpg" alt="Cachorro sorrindo para a câmera em um abrigo">
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>Missão da ONG Amigão</h2>
-            <p>Promover dignidade e oportunidade de acolhimento aos animais abandonados.</p>
+            <h2>Nossa Missão</h2>
+            <p>Promover dignidade e oportunidade de acolhimento aos animais abandonados através de:</p>
+            <div class="grid grid-4">
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🏥</div>
+                    <h3>Atendimento Veterinário</h3>
+                    <p>Cuidados médicos completos</p>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🏠</div>
+                    <h3>Abrigo Temporário</h3>
+                    <p>Espaço seguro e acolhedor</p>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">❤️</div>
+                    <h3>Processo de Adoção</h3>
+                    <p>Acompanhamento responsável</p>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">📚</div>
+                    <h3>Educação</h3>
+                    <p>Campanhas de conscientização</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: linear-gradient(135deg, #2196f3, #9c27b0); color: white; text-align: center;">
+            <h2 style="color: white;">Faça Parte da Nossa Missão!</h2>
+            <p style="color: white; font-size: 1.1rem; margin-bottom: 30px;">Cada contribuição faz a diferença na vida de um animal.</p>
+            <a href="register/cadastro.html" class="btn btn-lg" style="background: white; color: #2196f3;">Cadastre-se Agora</a>
         </section>
 
         <section>
-            <h2>Contato com ONG Amigão</h2>
-            <address>
-                <p>Endereço: Rua passagem Bingo, 123 - Bairro Bela Vista - São Paulo/SP</p>
-                <p>Telefone: (11) 99999-9999</p>
-                <p>Email: contato@organizaçãoongamigao.org.br</p>
-            </address>
+            <h2>Contato</h2>
+            <div style="background: #e3f2fd; padding: 30px; border-radius: 8px; border-left: 4px solid #2196f3;">
+                <p><strong>📍 Endereço:</strong> Rua passagem Bingo, 123 - Bairro Bela Vista - São Paulo/SP</p>
+                <p><strong>📱 Telefone:</strong> (11) 99999-9999</p>
+                <p><strong>✉️ Email:</strong> contato@ongamigao.org.br</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 ONG Amigão</p>
+    <footer style="background: #212121; color: white; text-align: center; padding: 40px 20px; margin-top: auto;">
+        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">🐾 ONG Amigão</div>
+        <p>Dedicados ao resgate e bem-estar de animais abandonados desde 2025.</p>
+        <p style="margin-top: 20px;">&copy; 2024 ONG Amigão. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const menuOverlay = document.querySelector('.menu-overlay');
+        
+        function toggleMenu() {
+            menuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        }
+        
+        menuToggle.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+    </script>
 </body>
 </html>

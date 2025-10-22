@@ -3,41 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adriano Rodrigues">
+    <meta name="description" content="Conheça os projetos da ONG Amigão: resgate, tratamento veterinário, abrigo e programa de adoção">
+    <meta name="keywords" content="projetos, voluntariado, doação, resgate animal, adoção responsável">
     <link rel="stylesheet" href="../estilos.css">
     <title>Projetos - ONG Amigão</title>
 </head>
 <body>
     <header>
-        <h1>Projetos da ONG Amigão</h1>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                🐾 ONG Amigão
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="#" class="active">Projetos</a></li>
+                    <li><a href="../register/cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
         <nav>
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="#">Projeto</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="#" class="active">Projetos</a></li>
                 <li><a href="../register/cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+    
+    <div class="menu-overlay"></div>
 
     <main>
-        <section>
-            <h2>Nossos Projetos</h2>
-            <p>Conheça as iniciativas que transformam a vida de centenas de animais todos os anos.</p>
-            <img src="../assets/4-5000x3333.jpg" alt="Voluntário cuidando de um filhote de gato.">
+        <section style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; text-align: center; padding: 60px 20px;">
+            <h1 style="color: white;">Nossos Projetos</h1>
+            <p style="color: white; font-size: 1.2rem;">Conheça as iniciativas que transformam vidas</p>
         </section>
+
+        <div class="grid grid-3">
+            <div class="card">
+                <img src="../assets/4-5000x3333.jpg" alt="Voluntário cuidando de um filhote de gato">
+                <div class="card-content">
+                    <h3>Resgate e Tratamento</h3>
+                    <p>Resgatamos animais em situação de risco e oferecemos tratamento veterinário completo.</p>
+                    <div style="margin: 15px 0;">
+                        <span class="badge badge-success">Ativo</span>
+                        <span class="badge badge-primary">Urgente</span>
+                    </div>
+                    <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/1-5000x3333.jpg" alt="Cachorro e gato juntos">
+                <div class="card-content">
+                    <h3>Programa de Adoção</h3>
+                    <p>Conectamos animais resgatados com famílias amorosas e responsáveis.</p>
+                    <div style="margin: 15px 0;">
+                        <span class="badge badge-success">Ativo</span>
+                        <span class="badge badge-info">Popular</span>
+                    </div>
+                    <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/8-5000x3333.jpg" alt="Cachorro feliz no abrigo">
+                <div class="card-content">
+                    <h3>Abrigo Temporário</h3>
+                    <p>Mantemos um abrigo seguro e confortável para os animais resgatados.</p>
+                    <div style="margin: 15px 0;">
+                        <span class="badge badge-success">Ativo</span>
+                        <span class="badge badge-warning">Precisa Doações</span>
+                    </div>
+                    <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
 
         <section>
             <h2>Seja um Voluntário</h2>
-            <p>O trabalho voluntário é a força que move nossa organização. Você pode ajudar cuidando dos animais, participando de eventos de adoção, e muito mais. Junte-se a nós!</p>
+            <div class="grid grid-2">
+                <div>
+                    <p>O trabalho voluntário é a força que move nossa organização. Você pode ajudar:</p>
+                    <ul style="margin-left: 20px;">
+                        <li>Cuidando dos animais no abrigo</li>
+                        <li>Participando de eventos de adoção</li>
+                        <li>Auxiliando em campanhas de conscientização</li>
+                        <li>Ajudando na divulgação nas redes sociais</li>
+                    </ul>
+                    <div class="alert alert-info mt-4">
+                        <strong>Como participar:</strong> Cadastre-se e entraremos em contato para agendar uma visita.
+                    </div>
+                    <a href="../register/cadastro.html" class="btn btn-primary btn-lg mt-4">Cadastre-se como Voluntário</a>
+                </div>
+                <div>
+                    <div style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; padding: 30px; border-radius: 8px; text-align: center; margin-bottom: 20px;">
+                        <div style="font-size: 2.5rem; font-weight: bold;">150+</div>
+                        <div>Voluntários Ativos</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; padding: 30px; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold;">2000+</div>
+                        <div>Horas Voluntárias/Mês</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
             <h2>Como Doar</h2>
-            <p>Sua doação é fundamental para mantermos nosso trabalho. Contribua com qualquer valor para a compra de ração, medicamentos e para a manutenção do nosso abrigo. Para doar, entre em contato pelo nosso e-mail ou telefone.</p>
+            <p>Sua doação é fundamental para mantermos nosso trabalho. Contribua com ração, medicamentos ou qualquer valor.</p>
+            
+            <div class="grid grid-4 mt-6">
+                <div style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">💳</div>
+                    <h3>PIX</h3>
+                    <p>contato@ongamigao.org.br</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🏦</div>
+                    <h3>Transferência</h3>
+                    <p>Banco 001 | Ag 1234-5</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🎁</div>
+                    <h3>Doações Físicas</h3>
+                    <p>Ração, medicamentos, cobertores</p>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🐾</div>
+                    <h3>Apadrinhamento</h3>
+                    <p>Apadrinhe um animal</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: linear-gradient(135deg, #2196f3, #9c27b0); color: white; text-align: center;">
+            <h2 style="color: white;">Junte-se a Nós!</h2>
+            <p style="color: white; font-size: 1.1rem; margin-bottom: 30px;">Seja voluntário, faça uma doação ou adote um animal.</p>
+            <a href="../register/cadastro.html" class="btn btn-lg" style="background: white; color: #2196f3;">Comece Agora</a>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 ONG Amigão</p>
+    <footer style="background: #212121; color: white; text-align: center; padding: 40px 20px; margin-top: auto;">
+        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">🐾 ONG Amigão</div>
+        <p>Dedicados ao resgate e bem-estar de animais abandonados desde 2025.</p>
+        <p style="margin-top: 20px;">&copy; 2024 ONG Amigão. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const menuOverlay = document.querySelector('.menu-overlay');
+        
+        function toggleMenu() {
+            menuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        }
+        
+        menuToggle.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+    </script>
 </body>
 </html>

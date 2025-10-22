@@ -1,0 +1,21 @@
+.mt-2 { margin-top: var(--space-2); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+
+.text-center { text-align: center; }
+.text-primary { color: var(--primary); }
+.text-gray { color: var(--gray-600); }
+
+.w-100 { width: 100%; }
+
+.d-none { display: none; }
+.d-block { display: block; }
+
+@media (max-width: 768px) {
+  .d-md-none { display: none; }
+}

@@ -3,72 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adriano Rodrigues">
+    <meta name="description" content="Cadastre-se como voluntário da ONG Amigão e ajude a transformar vidas de animais abandonados">
+    <meta name="keywords" content="cadastro voluntário, voluntariado, ajudar animais, ser voluntário">
     <link rel="stylesheet" href="../estilos.css">
     <title>Cadastro - ONG Amigão</title>
 </head>
 <body>
     <header>
-        <h1>Cadastro de Voluntário</h1>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                🐾 ONG Amigão
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../project/projeto.html">Projetos</a></li>
+                    <li><a href="#" class="active">Cadastro</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../project/projeto.html">Projeto</a></li>
-                <li><a href="#">Cadastro</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../project/projeto.html">Projetos</a></li>
+                <li><a href="#" class="active">Cadastro</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+    
+    <div class="menu-overlay"></div>
 
     <main>
-        <section>
-            <h2>Formulário de Cadastro</h2>
-            <p>Preencha o formulário abaixo para se tornar um voluntário da ONG Amigão.</p>
-            <picture>
-                <source srcset="../assets/1-5000x3333.webp" type="image/webp">
-                <source srcset="../assets/1-5000x3333.jpg" type="image/jpeg">
-                <img src="../assets/1-5000x3333.jpg" alt="Cachorro e gato sentados lado a lado.">
-            </picture>
+        <section style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; text-align: center; padding: 60px 20px;">
+            <h1 style="color: white;">Cadastro de Voluntário</h1>
+            <p style="color: white; font-size: 1.2rem;">Junte-se à nossa equipe!</p>
+        </section>
 
-            <form action="/submit-form" method="post">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <p><label for="nome">Nome Completo:</label><br>
-                    <input type="text" id="nome" name="nome" required minlength="3"></p>
+        <div class="grid grid-2">
+            <div>
+                <section>
+                    <h2>Por que ser voluntário?</h2>
+                    <img src="../assets/1-5000x3333.jpg" alt="Cachorro e gato juntos">
                     
-                    <p><label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" required></p>
+                    <div class="grid grid-2 mt-6">
+                        <div style="text-align: center; padding: 15px;">
+                            <div style="font-size: 2.5rem;">❤️</div>
+                            <h4>Faça a Diferença</h4>
+                            <p>Impacte vidas de animais</p>
+                        </div>
+                        <div style="text-align: center; padding: 15px;">
+                            <div style="font-size: 2.5rem;">🌟</div>
+                            <h4>Desenvolva Habilidades</h4>
+                            <p>Aprenda e cresça</p>
+                        </div>
+                        <div style="text-align: center; padding: 15px;">
+                            <div style="font-size: 2.5rem;">👥</div>
+                            <h4>Conheça Pessoas</h4>
+                            <p>Faça parte da comunidade</p>
+                        </div>
+                        <div style="text-align: center; padding: 15px;">
+                            <div style="font-size: 2.5rem;">🎓</div>
+                            <h4>Certificado</h4>
+                            <p>Receba certificado</p>
+                        </div>
+                    </div>
 
-                    <p><label for="cpf">CPF:</label><br>
-                    <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-00"></p>
+                    <div class="alert alert-info mt-6">
+                        <strong>Importante:</strong> Entraremos em contato em até 48 horas.
+                    </div>
+                </section>
+            </div>
 
-                    <p><label for="telefone">Telefone:</label><br>
-                    <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(11) 99999-9999"></p>
+            <div>
+                <section>
+                    <h2>Formulário de Cadastro</h2>
+                    <p class="text-gray">Preencha seus dados abaixo:</p>
 
-                    <p><label for="nascimento">Data de Nascimento:</label><br>
-                    <input type="date" id="nascimento" name="nascimento" required></p>
-                </fieldset>
+                    <form id="cadastroForm">
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            
+                            <div class="form-group">
+                                <label>Nome Completo *</label>
+                                <input type="text" name="nome" required placeholder="Digite seu nome completo">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>E-mail *</label>
+                                <input type="email" name="email" required placeholder="seu@email.com">
+                            </div>
 
-                <fieldset>
-                    <legend>Endereço</legend>
-                    <p><label for="cep">CEP:</label><br>
-                    <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="12345-678"></p>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>CPF *</label>
+                                    <input type="text" id="cpf" name="cpf" required placeholder="123.456.789-00">
+                                </div>
 
-                    <p><label for="endereco">Endereço:</label><br>
-                    <input type="text" id="endereco" name="endereco" required></p>
+                                <div class="form-group">
+                                    <label>Telefone *</label>
+                                    <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
+                                </div>
+                            </div>
 
-                    <p><label for="cidade">Cidade:</label><br>
-                    <input type="text" id="cidade" name="cidade" required></p>
+                            <div class="form-group">
+                                <label>Data de Nascimento *</label>
+                                <input type="date" name="nascimento" required>
+                            </div>
+                        </fieldset>
 
-                    <p><label for="estado">Estado:</label><br>
-                    <input type="text" id="estado" name="estado" required maxlength="2" placeholder="SP"></p>
-                </fieldset>
+                        <fieldset>
+                            <legend>Endereço</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>CEP *</label>
+                                    <input type="text" id="cep" name="cep" required placeholder="12345-678">
+                                </div>
 
-                <p><button type="submit">Enviar Cadastro</button></p>
-            </form>
+                                <div class="form-group">
+                                    <label>Estado *</label>
+                                    <select name="estado" required>
+                                        <option value="">Selecione</option>
+                                        <option value="SP">SP</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PR">PR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="RS">RS</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Endereço *</label>
+                                <input type="text" name="endereco" required placeholder="Rua, número">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Cidade *</label>
+                                    <input type="text" name="cidade" required placeholder="Nome da cidade">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Bairro</label>
+                                    <input type="text" name="bairro" placeholder="Nome do bairro">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="reset" class="btn btn-outline">Limpar</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Cadastro</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <section>
+            <h2>Dúvidas?</h2>
+            <div style="background: #e3f2fd; padding: 30px; border-radius: 8px; border-left: 4px solid #2196f3;">
+                <p><strong>📱 WhatsApp:</strong> (11) 99999-9999</p>
+                <p><strong>✉️ Email:</strong> voluntarios@ongamigao.org.br</p>
+                <p><strong>📍 Endereço:</strong> Rua passagem Bingo, 123 - Bairro Bela Vista - São Paulo/SP</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 ONG Amigão</p>
+    <footer style="background: #212121; color: white; text-align: center; padding: 40px 20px; margin-top: auto;">
+        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">🐾 ONG Amigão</div>
+        <p>Dedicados ao resgate e bem-estar de animais abandonados desde 2025.</p>
+        <p style="margin-top: 20px;">&copy; 2024 ONG Amigão. Todos os direitos reservados.</p>
     </footer>
+
+    <div class="modal-backdrop" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Cadastro Enviado!</h3>
+                <button class="modal-close" onclick="fecharModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Obrigado por se cadastrar! Entraremos em contato em breve.</p>
+                <div class="alert alert-success">
+                    Você receberá um e-mail de confirmação.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="fecharModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const menuOverlay = document.querySelector('.menu-overlay');
+        
+        function toggleMenu() {
+            menuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        }
+        
+        menuToggle.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+
+        document.getElementById('cadastroForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('modal').classList.add('active');
+        });
+
+        function fecharModal() {
+            document.getElementById('modal').classList.remove('active');
+            document.getElementById('cadastroForm').reset();
+        }
+
+        document.getElementById('cpf').addEventListener('input', (e) => {
+            let v = e.target.value.replace(/\D/g, '');
+            if (v.length <= 11) {
+                v = v.replace(/(\d{3})(\d)/, '$1.$2');
+                v = v.replace(/(\d{3})(\d)/, '$1.$2');
+                v = v.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+                e.target.value = v;
+            }
+        });
+
+        document.getElementById('telefone').addEventListener('input', (e) => {
+            let v = e.target.value.replace(/\D/g, '');
+            if (v.length <= 11) {
+                v = v.replace(/(\d{2})(\d)/, '($1) $2');
+                v = v.replace(/(\d{5})(\d)/, '$1-$2');
+                e.target.value = v;
+            }
+        });
+
+        document.getElementById('cep').addEventListener('input', (e) => {
+            let v = e.target.value.replace(/\D/g, '');
+            if (v.length <= 8) {
+                v = v.replace(/(\d{5})(\d)/, '$1-$2');
+                e.target.value = v;
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {
+  main {
+    padding: var(--space-4);
+  }
+}
+
+@media (max-width: 992px) {
+  h1 { font-size: var(--font-2xl); }
+  h2 { font-size: var(--font-xl); }
+  
+  section {
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: var(--space-3);
+  }
+  
+  section {
+    padding: var(--space-4);
+    margin-bottom: var(--space-4);
+  }
+  
+  h1 { font-size: var(--font-xl); }
+  h2 { font-size: var(--font-lg); }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .header-container {
+    padding: 0 var(--space-3);
+  }
+  
+  main {
+    padding: var(--space-2);
+  }
+  
+  section {
+    padding: var(--space-3);
+  }
+}
