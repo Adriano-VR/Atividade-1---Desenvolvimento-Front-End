@@ -9,30 +9,36 @@
     <title>ONG Amigão - SPA</title>
 </head>
 <body>
-    <header>
+    <a href="#spa-content" class="skip-link">Pular para o conteúdo</a>
+    
+    <header role="banner">
         <div class="header-container">
-            <a href="#home" data-page="home" class="logo">
+            <a href="#home" data-page="home" class="logo" aria-label="ONG Amigão - Página inicial">
                 🐾 ONG Amigão
             </a>
             
-            <nav>
+            <nav role="navigation" aria-label="Menu principal">
                 <ul>
-                    <li><a href="#home" data-page="home" class="active">Início</a></li>
+                    <li><a href="#home" data-page="home" class="active" aria-current="page">Início</a></li>
                     <li><a href="#projetos" data-page="projetos">Projetos</a></li>
                     <li><a href="#cadastro" data-page="cadastro">Cadastro</a></li>
                 </ul>
             </nav>
             
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+            
+            <button id="theme-toggle" aria-label="Alternar modo escuro" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; margin-left: 10px;">
+                🌙
+            </button>
         </div>
     </header>
     
-    <div class="mobile-menu">
-        <nav>
+    <div class="mobile-menu" role="dialog" aria-label="Menu mobile">
+        <nav role="navigation" aria-label="Menu mobile">
             <ul>
                 <li><a href="#home" data-page="home" class="active">Início</a></li>
                 <li><a href="#projetos" data-page="projetos">Projetos</a></li>
@@ -41,13 +47,13 @@
         </nav>
     </div>
     
-    <div class="menu-overlay"></div>
+    <div class="menu-overlay" aria-hidden="true"></div>
     
-    <main id="spa-content">
+    <main id="spa-content" role="main" aria-live="polite">
         <p style="text-align: center; padding: 40px;">Carregando...</p>
     </main>
 
-    <footer style="background: #212121; color: white; text-align: center; padding: 40px 20px; margin-top: auto;">
+    <footer role="contentinfo" style="background: #212121; color: white; text-align: center; padding: 40px 20px; margin-top: auto;">
         <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">🐾 ONG Amigão</div>
         <p>Dedicados ao resgate e bem-estar de animais abandonados desde 2014.</p>
         <p style="margin-top: 20px;">&copy; 2024 ONG Amigão. Todos os direitos reservados.</p>
