@@ -4,16 +4,17 @@ Site desenvolvido para a ONG Amigão, uma organização que cuida de animais aba
 
 ## Sobre o Projeto
 
-Este é um site institucional com 3 páginas principais:
-- Página inicial com informações sobre a ONG
-- Página de projetos mostrando as iniciativas
-- Página de cadastro para voluntários
+Site institucional completo com versão estática e SPA (Single Page Application):
+- Versão estática: index.html, projeto.html, cadastro.html
+- Versão SPA: spa.html (navegação sem recarregar página)
+- Sistema de templates JavaScript
+- Validação avançada de formulários
 
 ## Tecnologias Usadas
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript ES6+
 
 ## Estrutura do Projeto
 
@@ -28,13 +29,21 @@ Este é um site institucional com 3 páginas principais:
 │   ├── components.css
 │   ├── forms.css
 │   ├── utilities.css
-│   └── responsive.css
+│   ├── responsive.css
+│   └── validation-styles.css
+├── js/              # Arquivos JavaScript modulares
+│   ├── spa.js           # Sistema SPA
+│   ├── templates.js     # Sistema de templates
+│   ├── validation.js    # Validação de formulários
+│   ├── utils.js         # Funções utilitárias
+│   └── main.js          # Inicialização
 ├── project/
 │   └── projeto.html
 ├── register/
 │   └── cadastro.html
 ├── estilos.css      # CSS principal
-└── index.html       # Página inicial
+├── index.html       # Página inicial
+└── spa.html         # Versão SPA
 ```
 
 ## Características do CSS
@@ -89,13 +98,20 @@ Menu hambúrguer que abre um menu lateral em telas pequenas.
 
 ## Como Usar
 
+### Versão Estática
 1. Abra o arquivo `index.html` no navegador
 2. Navegue entre as páginas pelo menu
 3. Teste o formulário de cadastro
-4. Redimensione a janela para ver o layout responsivo
+
+### Versão SPA
+1. Abra o arquivo `spa.html` no navegador
+2. Navegue entre as páginas sem recarregar
+3. Teste o formulário com validação avançada
+4. Veja as mensagens de erro em tempo real
 
 ## Requisitos Atendidos
 
+### Entrega 2 - CSS3
 ✅ Sistema de design com variáveis CSS  
 ✅ 8+ cores definidas  
 ✅ 5+ tamanhos de fonte  
@@ -108,7 +124,19 @@ Menu hambúrguer que abre um menu lateral em telas pequenas.
 ✅ Botões com estados hover/focus/active  
 ✅ Formulários com validação visual  
 ✅ Componentes: alerts, badges, modal  
-✅ CSS modular organizado  
+✅ CSS modular organizado
+
+### Entrega 3 - JavaScript
+✅ Sistema SPA (Single Page Application)  
+✅ Manipulação do DOM  
+✅ Sistema de templates JavaScript  
+✅ Validação de formulários  
+✅ Verificação de consistência de dados  
+✅ Avisos de preenchimento incorreto  
+✅ Validação de campos obrigatórios  
+✅ Máscaras de input (CPF, telefone)  
+✅ localStorage para armazenamento  
+✅ Código JavaScript modular  
 
 ## Autor
 Adriano Rodrigues

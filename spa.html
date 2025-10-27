@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adriano Rodrigues">
+    <meta name="description" content="ONG Amigão - Single Page Application com JavaScript avançado">
+    <link rel="stylesheet" href="estilos.css">
+    <title>ONG Amigão - SPA</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#home" data-page="home" class="logo">
+                🐾 ONG Amigão
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" data-page="home" class="active">Início</a></li>
+                    <li><a href="#projetos" data-page="projetos">Projetos</a></li>
+                    <li><a href="#cadastro" data-page="cadastro">Cadastro</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="#home" data-page="home" class="active">Início</a></li>
+                <li><a href="#projetos" data-page="projetos">Projetos</a></li>
+                <li><a href="#cadastro" data-page="cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="menu-overlay"></div>
+    
+    <main id="spa-content">
+        <p style="text-align: center; padding: 40px;">Carregando...</p>
+    </main>
+
+    <footer style="background: #212121; color: white; text-align: center; padding: 40px 20px; margin-top: auto;">
+        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">🐾 ONG Amigão</div>
+        <p>Dedicados ao resgate e bem-estar de animais abandonados desde 2014.</p>
+        <p style="margin-top: 20px;">&copy; 2024 ONG Amigão. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/spa.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
